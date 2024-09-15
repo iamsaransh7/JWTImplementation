@@ -38,7 +38,7 @@ namespace JWTImplementation.Services
                     if (user != null)
                     {
                         var claims = new[] {
-                            new Claim(JwtRegisteredClaimNames.Sub, _configuration["Jwt:Subjects"]),
+                            new Claim(JwtRegisteredClaimNames.Sub, _configuration["Jwt:Subject"]),
                             new Claim("Id", user.Id.ToString()),
                             new Claim("UserName", user.Name),
                             new Claim("Email", user.Email)

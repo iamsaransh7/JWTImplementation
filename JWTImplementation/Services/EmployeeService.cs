@@ -56,7 +56,7 @@ namespace JWTImplementation.Services
         {
             var updated = _jwtContext.Employees.Update(employee);
             _jwtContext.SaveChanges();
-            return updated;
+            return updated.Entity;
         }
     }
 }

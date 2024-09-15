@@ -8,6 +8,6 @@ namespace JWTImplementation.Interfaces
         public Employee GetEmployeeDetails(int id);
         public Employee AddEmployee(Employee employee);
         public Employee UpdateEmployee(Employee employee);
-        public Employee DeleteEmployee(int id);
+        public bool DeleteEmployee(int id);
     }
 }
